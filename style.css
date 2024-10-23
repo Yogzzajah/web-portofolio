@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a{
+    font-size: 18.4px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: monospace;
+    margin-left: 37px;
+    transition: .3s;
+}
+
+nav a:hover, nav a.active{
+    color: yellow;
+}
+
+section:nth-child(odd){
+    background-color: gray;
+}
+
+.logo{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 7px;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.foto{
+    max-width: 30px;
+    border-radius: 50px;
+    margin-top: 3px;
+    border: 1.4px solid white;
+}
+
+/*home*/
+#home{
+    background-color: #081b29;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 10% 10%;
+    font-family: monospace;
+}
+
+.content-home{
+    max-width: 500px;
+}
+
+.content-home h1{
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 3px 6px black;
+}
+
+.content-home h3{
+    color: #00abf0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 7px;
+    text-shadow: 2px 3px 6px black;
+}
+
+.content-home p{
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 3px 6px black;
+}
+
+#gambarY{
+    max-width: 490px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.btn-box{
+    display: flex;
+    margin: 20px 0 -5px;
+    height: 50px;
+    gap: 7px;
+}
+
+.btn-box img{
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid #00abf0;
+    box-shadow: 2px 3px 6px black;
+}
+
+.btn-box a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 2px 3px 6px black;
+}
+
+.btn-box a:hover{
+    transition: .3s;
+    background-color: #0079c4;
+    color: aliceblue;
+}
+
+.home-icon{
+    display: flex;
+    bottom: 50px;
+    position: absolute;
+    gap: 30px;
+}
+
+.home-icon img:hover {
+    scale: 1.1;
+    transition: 0.2s ease-in-out;
+}
+
+#fb, #dc, #tt, #x{
+    width: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+    box-shadow: 2px 3px 6px black;
+}
+
+#ins{
+    width: 42.5px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+/**/
+
+/*about*/
+#about{
+    background-color: #152435;
+    display: flex;
+    height: 110vh;
+    padding: 0 12%;
+    justify-content: space-between;
+}
+
+#about div img{
+    width: 270px;
+    border-radius: 8px;
+    margin-top: 213px;
+    box-shadow: 0 0 15px #eee;
+}
+
+#about div table{
+    text-align: justify;
+    font-size: 20px;
+    color: #eee;
+    margin-top: 200px;
+    text-shadow: 2px 3px 6px black;
+}
+
+#about div table th{
+    padding-right: 7px;
+    padding: 5px;
+}
+
+/**/
+
+/*pendidikan*/
+#pendidikan{
+    background-color: #081b29;
+    height: 350vh;
+    color: white;
+    padding: 0 10%;
+}
+
+.sekolah{
+    transform: translateX(400%);
+    transition: transform 1s ease;
+    
+}
+
+.sekolah:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.sekolah.show{
+    transform: translateX(0);
+}
+
+
+#tk img, #sd img{
+    width: 450px;
+    border-radius: 7px;
+    border: 1px solid white;
+    box-shadow: 2px 3px 6px black;
+}
+
+#tk h2{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 250px;
+    text-shadow: 2px 3px 6px black;
+}
+
+#sd h2{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 80px;
+    text-shadow: 2px 3px 6px black;
+}
+
+#tk h4, #sd h4{
+    margin-bottom: 4px;
+    margin-top: 12px;
+    text-align: center;
+    text-shadow: 2px 3px 6px black;
+}
+
+
+#smp img, #smk img{
+    width: 460px;
+    border-radius: 7px;
+    border: 1px solid white;   
+    box-shadow: 2px 3px 6px black;
+}
+
+#smp h2, #smk h2{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 80px;
+    text-shadow: 2px 3px 6px black;
+}
+
+#smp h4, #smk h4{
+    margin-bottom: 4px;
+    margin-top: 12px;
+    text-align: center;
+    text-shadow: 2px 3px 6px black;
+}
+
+/**/
+
+/*project*/
+#project{
+    background-color: #152435;
+    height: 320vh;
+    padding: 0 8%;
+}
+
+.c, .af, .aa, .web{
+    display: flex;
+    justify-content: space-between;
+}
+
+#c1 img, #c2 img, #af1 img, #af2 img, #aa1 img, #aa2 img ,#web1 img, #web2 img{
+    width: 420px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+#c1, #c2, #af1, #af2, #aa1, #aa2, #web1, #web2{
+    margin-top: 60px;
+    width: 460px;
+    height: 370px;
+    background-color: rgb(79, 75, 75); 
+    border-radius: 6px;
+    box-shadow: 2px 3px 6px black
+}
+
+#c1 p, #c2 p, #af1 p, #af2 p, #aa1 p, #aa2 p, #web1 p, #web2 p{
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+#c1 h2, #c2 h2, #af1 h2, #af2 h2, #aa1 h2, #aa2 h2, #web1 h2, #web2 h2{
+    text-align: center;
+    font-family: sans-serif;
+    color:#00abf0
+}
+
+.p{
+    transform: translateX(400%);
+    transition: transform 0.8s ease;
+    color: white;
+}
+
+.p:nth-of-type(odd){
+    transform: translateX(-400%);
+}
+
+.p.show{
+    transform: translateX(0);
+}
+
+
+/**/
+
+/*contact*/
+#contact{
+    background-color: #242525;
+    height: 15vh;
+}
+
+.ct{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#wa{
+    width: 30px;
+    background-color: rgb(32, 249, 32);
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+#e{
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.ct img:hover {
+    scale: 1.1;
+    transition: 0.2s ease-in-out;
+}
